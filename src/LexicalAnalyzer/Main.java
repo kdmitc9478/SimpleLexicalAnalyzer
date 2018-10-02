@@ -259,11 +259,9 @@ public class Main{
     }
 
     //outputs a formatted line
-    private static void outputLine(){
-        /*Uncomment if a token is needed to mark the end of a line
-
-
+   private static void outputLine(){
         if (nextToken == EOL){
+            /* Uncomment this block to add an end of line Token
             String output = "Next token is: " + nextToken;
             output += padRight(output);
             output += "Next lexeme is ";
@@ -271,12 +269,12 @@ public class Main{
                     lexeme) {
                 output += t;
             }
-            System.out.println(output);
+            System.out.println(output);*/
             printNewLine();
         }
 
 
-        else {*/
+        else {
             String output = "Next token is: " + nextToken;
             output += padRight(output);
             output += "Next lexeme is ";
@@ -285,7 +283,7 @@ public class Main{
                 output += t;
             }
             System.out.println(output);
-        //}
+        }
     }
 
     //provides padding to the outputed lines
