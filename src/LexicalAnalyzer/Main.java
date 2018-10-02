@@ -8,7 +8,7 @@ public class Main{
     /*Global Declarations*/
     /*Constants*/
     private static final int LEXLEN = 100;
-    private static final int LINELENGTH = 70;
+    private static final int LINELENGTH = 80;
 
     /*Variables*/
     private static String charClass;
