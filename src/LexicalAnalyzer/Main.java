@@ -9,6 +9,7 @@ public class Main{
     /*Constants*/
     private static final int LEXLEN = 100;
     private static final int LINELENGTH = 80;
+    private static final String FILEPATH = "src/LexicalAnalyzer/lexInput.txt";
 
     /*Variables*/
     private static String charClass;
@@ -52,7 +53,7 @@ public class Main{
             System.out.println("\n\nKevin Mitchell, CSCI4200-DA, Fall 2018, Lexical Analyzer");
             printNewLine();
             //Check File
-            if((f = new File("src/LexicalAnalyzer/lexInput.txt")) == null)
+            if((f = new File(FILEPATH)) == null)
                 System.out.println("Error - cannot open file 'lexInput.txt'");
             else {
                 BufferedReader b = new BufferedReader(new FileReader(f));
