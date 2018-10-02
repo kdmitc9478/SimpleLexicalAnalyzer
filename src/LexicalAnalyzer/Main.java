@@ -54,7 +54,7 @@ public class Main{
             printNewLine();
             //Check File
             if((f = new File(FILEPATH)) == null)
-                System.out.println("Error - cannot open file 'lexInput.txt'");
+                System.out.println("Error - cannot open file " + FILEPATH);
             else {
                 BufferedReader b = new BufferedReader(new FileReader(f));
                 //Begin looping Lines
