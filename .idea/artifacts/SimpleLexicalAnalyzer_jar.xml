@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="SimpleLexicalAnalyzer:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/SimpleLexicalAnalyzer_jar</output-path>
+    <root id="archive" name="SimpleLexicalAnalyzer.jar">
+      <element id="module-output" name="SimpleLexicalAnalyzer" />
+    </root>
+  </artifact>
+</component>

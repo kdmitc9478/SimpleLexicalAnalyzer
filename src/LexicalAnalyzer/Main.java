@@ -8,7 +8,8 @@ public class Main{
     /*Global Declarations*/
     /*Constants*/
     private static final int LEXLEN = 100;
-    private static final int LINELENGTH = 70;
+    private static final int LINELENGTH = 80;
+    private static final String FILEPATH = "src/LexicalAnalyzer/lexInput.txt";
 
     /*Variables*/
     private static String charClass;
@@ -52,7 +53,7 @@ public class Main{
             System.out.println("\n\nKevin Mitchell, CSCI4200-DA, Fall 2018, Lexical Analyzer");
             printNewLine();
             //Check File
-            if((f = new File("src/LexicalAnalyzer/lexInput.txt")) == null)
+            if((f = new File(FILEPATH)) == null)
                 System.out.println("Error - cannot open file 'lexInput.txt'");
             else {
                 BufferedReader b = new BufferedReader(new FileReader(f));
@@ -259,10 +260,8 @@ public class Main{
 
     //outputs a formatted line
     private static void outputLine(){
-        /*Uncomment if a token is needed to mark the end of a line
-
-
         if (nextToken == EOL){
+            /* Uncomment this block to add an end of line Token
             String output = "Next token is: " + nextToken;
             output += padRight(output);
             output += "Next lexeme is ";
@@ -270,12 +269,12 @@ public class Main{
                     lexeme) {
                 output += t;
             }
-            System.out.println(output);
+            System.out.println(output);*/
             printNewLine();
         }
 
 
-        else {*/
+        else {
             String output = "Next token is: " + nextToken;
             output += padRight(output);
             output += "Next lexeme is ";
@@ -284,7 +283,7 @@ public class Main{
                 output += t;
             }
             System.out.println(output);
-        //}
+        }
     }
 
     //provides padding to the outputed lines
