@@ -1,0 +1,10 @@
+You'll need to change the name of the .java file and the surrounding packages to match the criteria given.
+
+Program, Input and Output Requirements
+a. Create your program, called LexicalAnalyzer, in a package called
+lexicalAnayzerPackage
+b. Store all the statements in a single input file called lexInput.
+c. Enter each statement on a separate line.
+d. Store the lexInput file in the above package.
+e. In the output, display each statement before you list its corresponding lexemes and
+tokens.

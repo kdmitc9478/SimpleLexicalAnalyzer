@@ -54,7 +54,11 @@ public class Main{
             printNewLine();
             //Check File
             if((f = new File(FILEPATH)) == null)
+<<<<<<< HEAD
                 System.out.println("Error - cannot open file 'lexInput.txt'");
+=======
+                System.out.println("Error - cannot open file " + FILEPATH);
+>>>>>>> 381b09a8874ef02ec3dca52a111bb85fa5d6da62
             else {
                 BufferedReader b = new BufferedReader(new FileReader(f));
                 //Begin looping Lines
@@ -259,7 +263,11 @@ public class Main{
     }
 
     //outputs a formatted line
+<<<<<<< HEAD
     private static void outputLine(){
+=======
+   private static void outputLine(){
+>>>>>>> 381b09a8874ef02ec3dca52a111bb85fa5d6da62
         if (nextToken == EOL){
             /* Uncomment this block to add an end of line Token
             String output = "Next token is: " + nextToken;
