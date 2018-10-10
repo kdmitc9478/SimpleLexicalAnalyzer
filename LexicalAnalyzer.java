@@ -212,8 +212,8 @@ public class LexicalAnalyzer{
       String output = "Next token is: " + nextToken;
       output += align(output);
       output += "Next lexeme is ";
-      for (char t : lexeme) {
-         output += t;
+      for (int t = 0; t < lexeme.length && lexeme[t] != 0; t++) {
+         output += lexeme[t];
       }
       System.out.println(output);
    }
